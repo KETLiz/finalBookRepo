@@ -1,0 +1,17 @@
+#logging:
+#  level:
+#    root: debug
+http:
+  logging:
+    enabled: false
+    log-level: info
+
+datasource:
+  url: jdbc:h2:mem:test
+  username: li
+  password:
+  driver-class-name: org.h2.Driver
+jpa:
+  show-sql: true
+  hibernate:
+    ddl-auto: create-drop
